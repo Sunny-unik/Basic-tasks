@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+.App-header {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: left;
+}
+.hdiv {
+  text-align: left;
+}
+.input1 {
+  width: 700px;
+  font-size: 48px;
+}
+.b {
+  width: 700px;
+  font-size: 48px;
+  margin-top: 2%;
+  font-family: fantasy;
+  background-color: cadetblue;
+}
+.basic {
+  color: white;
+}
