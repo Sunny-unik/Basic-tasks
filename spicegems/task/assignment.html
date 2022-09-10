@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <title>Form Validation Task</title>
+  </head>
+
+  <body>
+    <div class="mainidiv">
+      <form
+        class="form"
+        action="onsubmit.html"
+        method="get"
+        onsubmit="return validate()"
+      >
+        <label for="username">Enter Username</label>
+        <input
+          type="text"
+          placeholder="enter username"
+          name="username"
+          id="username"
+          class="input"
+        />
+        <p id="error1">
+          Username length must be in between 4 to 12 characters and not contain
+          any space
+        </p>
+        <label for="fullname">Enter Fullname</label>
+        <input
+          type="text"
+          placeholder="enter full name"
+          name="fullname"
+          id="fullname"
+          class="input"
+        />
+        <p id="error2">
+          Fullname length must be in between 2 to 28 characters that not
+          consists any number and symbol
+        </p>
+        <label for="mobileno">Enter Mobile number</label>
+        <input
+          type="number"
+          placeholder="enter mobile number"
+          name="mobileno"
+          id="mobileno"
+          class="input"
+        />
+        <p id="error3">Mobile number length must equal to 10</p>
+        <label for="email">Enter Email</label>
+        <input
+          type="email"
+          placeholder="enter email"
+          name="email"
+          id="email"
+          class="input"
+        />
+        <p id="error4">
+          Email cannot be null and it must contain "@" and "." and does not
+          contain any space
+        </p>
+        <label for="about">Enter About Yourself</label>
+        <textarea
+          name="about"
+          cols="20"
+          rows="5"
+          placeholder="enter details about yourself"
+          id="about"
+          class="textbox"
+        ></textarea>
+        <p id="error5">
+          Your details length must be in between 6 to 50 characters
+        </p>
+        <br />
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
